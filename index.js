@@ -25,9 +25,6 @@ function deepestChild() {
     node = nextNode 
     nextNode = node.children[0] 
   }  
-  console.log(node);
+  console.log(node);d
   return node ;
 }
-
-//separate from solution above
- //function helperFunction(element) {     if (element.children.length > 0) {     return helperFunction(element.children[0])   } else {     return element   } }  function deepestChild() {   let element = document.querySelector('#grand-node')   return helperFunction(element) } 
