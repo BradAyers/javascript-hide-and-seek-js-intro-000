@@ -28,8 +28,8 @@ function deepestChild() {
     console.log(node.length);
     console.log(node[i].innerHTML);
     testArray = Array.from(node);
-    for (var i = 0; i < testArray.length; i++) {
-      console.log(testArray[i]);
+    for (var q = 0; q < testArray.length; q++) {
+      console.log(testArray[q]);
     }
   }
   //return node;
