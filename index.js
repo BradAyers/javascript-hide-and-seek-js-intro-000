@@ -27,7 +27,6 @@ function deepestChild() {
   for (let i = 0; i < node.length; i++) {
     console.log(node.length);
     console.log(node[i].innerHTML);
-    testArray = Array.from(node);
   }
   //return node;
 }
