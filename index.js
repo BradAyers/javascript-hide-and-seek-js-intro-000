@@ -18,18 +18,16 @@ function increaseRankBy(n) {
 }
 
 function deepestChild() {
-  //let node = document.querySelectorAll('div#grand-node');
   let node = document.getElementById('grand-node');
-  console.log(node);
-  var children = node.children;
-  console.log(children);
-  let nextNode = document.querySelector('div#grand-node');
-  //console.log(node.innerHTML);
-  //console.log(typeof node);
-  //console.log(nextNode.innerHTML);
-  //console.log(typeof nextNode);
-  for (let i = 0; i < node.length; i++) {
-    console.log(node.length);
-    console.log(node[i].innerHTML);
-  }
+  let nextNode = node.children[0]  ;
+
+  while (nextNode) {     
+    node = nextNode     
+    nextNode = node.children[0]   
+  }   
+   
+  return node ;
 }
+
+//separate from solution above
+ //function helperFunction(element) {     if (element.children.length > 0) {     return helperFunction(element.children[0])   } else {     return element   } }  function deepestChild() {   let element = document.querySelector('#grand-node')   return helperFunction(element) } 
