@@ -25,13 +25,9 @@ function deepestChild() {
   //console.log(nextNode.innerHTML);
   //console.log(typeof nextNode);
   for (let i = 0; i < node.length; i++) {
-    //console.log(node.length);
-    //console.log(node[i].innerHTML);
+    console.log(node.length);
+    console.log(node[i].innerHTML);
     testArray = Array.from(node);
-    for (var q = 0; q < testArray.length; q++) {
-      console.log('element '+ q++ + " is: ");
-      console.log(testArray[q]);
-    }
   }
   //return node;
 }
