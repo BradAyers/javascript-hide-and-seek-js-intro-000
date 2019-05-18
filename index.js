@@ -24,7 +24,7 @@ function deepestChild() {
   while (nextNode) { 
     node = nextNode 
     nextNode = node.children[0] 
-    console.log(nextNode);
+    console.log(node);
   }  
   console.log(node);d
   return node ;
