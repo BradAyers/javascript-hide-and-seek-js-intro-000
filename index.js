@@ -29,6 +29,7 @@ function deepestChild() {
     console.log(node[i].innerHTML);
     testArray = Array.from(node);
     for (var q = 0; q < testArray.length; q++) {
+      console.log('element '+ q++ + " is: ");
       console.log(testArray[q]);
     }
   }
